@@ -1,22 +1,22 @@
-// ARDUINO DEMO FOR GROVE-ATH20
+// ARDUINO DEMO FOR GROVE-AHT20
 //
 #include <Wire.h>
-#include "ATH20.h"
+#include "AHT20.h"
 
-ATH20 ATH;
+AHT20 AHT;
 
 void setup()
 {
     Serial.begin(115200);
-    Serial.println("ATH20 DEMO");
-    ATH.begin();
+    Serial.println("AHT20 DEMO");
+    AHT.begin();
 }
 
 void loop()
 {
     float humi, temp;
     
-    int ret = ATH.getSensor(&humi, &temp);
+    int ret = AHT.getSensor(&humi, &temp);
     
     if(ret)     // GET DATA OK
     {
@@ -27,7 +27,7 @@ void loop()
     }
     else        // GET DATA FAIL
     {
-        Serial.println("GET DATA FROM ATH20 FAIL");
+        Serial.println("GET DATA FROM AHT20 FAIL");
     }
     
     delay(100);

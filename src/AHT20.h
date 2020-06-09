@@ -1,10 +1,10 @@
-#ifndef __ATH20_H__
-#define __ATH20_H__
+#ifndef __AHT20_H__
+#define __AHT20_H__
 
 #include <Arduino.h>
 #include <Wire.h>
 
-class ATH20{
+class AHT20{
     
 private:
 

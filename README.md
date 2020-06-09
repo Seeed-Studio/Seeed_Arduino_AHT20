@@ -1,4 +1,4 @@
-# Seeed_Arduino_ATH20 [![Build Status](https://travis-ci.com/Seeed-Studio/Seeed_Arduino_ATH20.svg?branch=master)](https://travis-ci.com/Seeed-Studio/Seeed_Arduino_ATH20)
+# Seeed_Arduino_AHT20 [![Build Status](https://travis-ci.com/Seeed-Studio/Seeed_Arduino_AHT20.svg?branch=master)](https://travis-ci.com/Seeed-Studio/Seeed_Arduino_AHT20)
 
 ## Introduction
 
@@ -7,25 +7,25 @@ AHT20 is a new generation of temperature and humidity sensor embedded with a dua
 ## Usage 
 
 ```c++
-// ARDUINO DEMO FOR GROVE-ATH20
+// ARDUINO DEMO FOR GROVE-AHT20
 //
 #include <Wire.h>
-#include "ATH20.h"
+#include "AHT20.h"
 
-ATH20 ATH;
+AHT20 AHT;
 
 void setup()
 {
     Serial.begin(115200);
-    Serial.println("ATH20 DEMO");
-    ATH.begin();
+    Serial.println("AHT20 DEMO");
+    AHT.begin();
 }
 
 void loop()
 {
     float humi, temp;
     
-    int ret = ATH.getSensor(&humi, &temp);
+    int ret = AHT.getSensor(&humi, &temp);
     
     if(ret)     // GET DATA OK
     {
@@ -36,7 +36,7 @@ void loop()
     }
     else        // GET DATA FAIL
     {
-        Serial.println("GET DATA FROM ATH20 FAIL");
+        Serial.println("GET DATA FROM AHT20 FAIL");
     }
     
     delay(100);
@@ -52,7 +52,7 @@ void loop()
 Initializing the AHT20
 
 ```c++
-    ATH.begin();
+    AHT.begin();
 ```
 
 ### bool getSensor(float *h, float *t)
@@ -61,7 +61,7 @@ get all data of sensor
 
 
 ```c++
-    int ret = ATH.getSensor(&humi, &temp);
+    int ret = AHT.getSensor(&humi, &temp);
 ```
 
 ### bool getTemperature(float *t)
@@ -70,7 +70,7 @@ get Temperature of sensor
 
 
 ```c++
-    int ret = ATH.getTemperature(&temp);
+    int ret = AHT.getTemperature(&temp);
 ```
 
 ### bool getHumidity(float *h)
@@ -78,5 +78,5 @@ get Temperature of sensor
 get Humidity of sensor
 
 ```c++
-    int ret = ATH.getHumidity(&humi);
+    int ret = AHT.getHumidity(&humi);
 ```
