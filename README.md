@@ -1,4 +1,4 @@
-# Seeed_Arduino_AHT20 [![Build Status](https://travis-ci.com/Seeed-Studio/Seeed_Arduino_AHT20.svg?branch=master)](https://travis-ci.com/Seeed-Studio/Seeed_Arduino_AHT20)
+# Seeed_Arduino_AHT20 [![Build Status](https://travis-ci.com/Seeed-Studio/Seeed_Arduino_ATH20.svg?branch=master)](https://travis-ci.com/Seeed-Studio/Seeed_Arduino_ATH20)
 
 ## Introduction
 
