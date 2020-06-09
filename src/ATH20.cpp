@@ -1,7 +1,7 @@
-// ATH20 ARDUINO LIBRARY
-#include "ATH20.H"
+// AHT20 ARDUINO LIBRARY
+#include "AHT20.h"
 
-void ATH20::begin()
+void AHT20::begin()
 {
     Wire.begin();
 
@@ -10,7 +10,7 @@ void ATH20::begin()
     Wire.endTransmission();    // stop transmitting
 }
 
-bool ATH20::startSensor()
+bool AHT20::startSensor()
 {
     Wire.beginTransmission(0x38); // transmit to device #8
     Wire.write(0xac);
@@ -35,7 +35,7 @@ bool ATH20::startSensor()
     }
 }
 
-bool ATH20::getSensor(float *h, float *t)
+bool AHT20::getSensor(float *h, float *t)
 {
     startSensor();
     Wire.requestFrom(0x38, 6);
@@ -73,7 +73,7 @@ bool ATH20::getSensor(float *h, float *t)
 
 }
 
-bool ATH20::getTemperature(float *t)
+bool AHT20::getTemperature(float *t)
 {
     float __t, __h;
     
@@ -84,7 +84,7 @@ bool ATH20::getTemperature(float *t)
     return 1;
 }
 
-bool ATH20::getHumidity(float *h)
+bool AHT20::getHumidity(float *h)
 {
     float __t, __h;
     

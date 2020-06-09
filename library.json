@@ -1,12 +1,12 @@
 {
-  "name": "Seeed_Arduino_ATH20",
+  "name": "Seeed_Arduino_AHT20",
   "version": "1.0.0",
-  "keywords": "ATH20, IR",
-  "description": "A arduino library for ATH20 sensor",
+  "keywords": "AHT20,temp,humi",
+  "description": "A arduino library for AHT20 sensor",
   "repository":
   {
     "type": "git",
-    "url": "https://github.com/Seeed-Studio/Seeed_Arduino_ATH20"
+    "url": "https://github.com/Seeed-Studio/Seeed_Arduino_AHT20"
   },
   "authors":
   [
