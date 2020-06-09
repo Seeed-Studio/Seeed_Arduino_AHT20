@@ -1,0 +1,21 @@
+{
+  "name": "Seeed_Arduino_ATH20",
+  "version": "1.0.0",
+  "keywords": "ATH20, IR",
+  "description": "A arduino library for ATH20 sensor",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/Seeed-Studio/Seeed_Arduino_ATH20"
+  },
+  "authors":
+  [
+    {
+        "name": "Junjie Chen",
+        "email": "59535940@qq.com",
+        "maintainer": true
+    }
+  ],
+  "frameworks": "arduino",
+  "platforms": "*2"
+}
