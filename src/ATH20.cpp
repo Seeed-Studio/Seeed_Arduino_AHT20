@@ -41,13 +41,13 @@ bool AHT20::getSensor(float *h, float *t)
     Wire.requestFrom(0x38, 6);
 
 
-    unsigned char str[6];
+    unsigned char str[6] ={0,};
     int index = 0;
     while (Wire.available())
     {
         str[index++] = Wire.read(); // receive a byte as character
     }
-
+    if(index == 0 )return 0; 
     if(str[0] & 0x80)return 0;
 
     unsigned long __humi = 0;
